@@ -20,6 +20,10 @@
       background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('img/campus_sunset.jpg') center/cover no-repeat;
       color: white;
     }
+    .hero {
+  background: url('assets/img/campus_sunset.jpg') no-repeat center center fixed;
+  background-size: cover;
+    }
     .card img {
       height: 200px;
       object-fit: cover;
@@ -34,6 +38,22 @@
 </head>
 
 <body>
+
+  <!-- Back to Top Button -->
+<button id="backToTop" class="btn btn-primary" onclick="window.scrollTo(0, 0)" style="position: fixed; bottom: 20px; right: 20px; display: none;">
+  回到頂部
+</button>
+
+<script>
+  // Show the button when scroll down 100px from top
+  window.onscroll = function() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      document.getElementById("backToTop").style.display = "block";
+    } else {
+      document.getElementById("backToTop").style.display = "none";
+    }
+  };
+</script>
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -61,6 +81,14 @@
       <a href="#about" class="btn btn-light mt-3">認識 DIN</a>
     </div>
   </section>
+
+  <!-- Parallax Section -->
+<section class="parallax" style="background: url('assets/img/ncu_gate.jpg') no-repeat fixed center; background-size: cover; height: 500px;">
+  <div class="container text-center text-white" style="padding-top: 150px;">
+    <h2>中央大學正門</h2>
+    <p>踏入這扇門，將開始你的學術旅程</p>
+  </div>
+</section>
 
   <!-- About Section -->
   <section id="about" class="py-5">
@@ -155,6 +183,13 @@
 
   <!-- Footer -->
   <footer>
+   <!-- Social Media Links -->
+<div class="text-center my-4">
+  <a href="https://www.instagram.com" target="_blank" class="btn btn-outline-primary btn-sm mx-2">Instagram</a>
+  <a href="https://www.facebook.com" target="_blank" class="btn btn-outline-primary btn-sm mx-2">Facebook</a>
+  <a href="https://line.me" target="_blank" class="btn btn-outline-primary btn-sm mx-2">Line</a>
+</div>
+
     <p>&copy; 2025 DIN at NCU. All Rights Reserved.</p>
   </footer>
 
