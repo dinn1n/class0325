@@ -1,150 +1,71 @@
-<!DOCTYPE html>
-<html lang="zh-TW">
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <h1>歡迎來到 DIN 的中央大學介紹</h1>
+    <p>跟著 DIN，一起探索 NCU 的每個角落！</p>
+    <p class="lead">這裡，是夢想發芽的地方，也是回憶綻放的起點。</p>
+    <a href="#about" class="btn btn-light mt-3">認識 DIN</a>
+  </div>
+</section>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DIN 的中央大學介紹</title>
-  <meta name="description" content="探索中央大學的校園生活、學術資源與DIN的校園回憶！">
-  <meta name="keywords" content="中央大學, NCU, DIN, 校園生活, 桃園大學">
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      padding-top: 70px;
-    }
-    .hero {
-      background: url('assets/img/campus_sunset.jpg') no-repeat center center fixed;
-      background-size: cover;
-      text-align: center;
-      padding: 60px 0;
-      color: white;
-    }
-    .parallax {
-      background: url('assets/img/ncu_gate.jpg') no-repeat fixed center;
-      background-size: cover;
-      height: 500px;
-    }
-    .card img {
-      height: 200px;
-      object-fit: cover;
-    }
-    footer {
-      background-color: #333;
-      color: white;
-      padding: 20px 0;
-      text-align: center;
-    }
-  </style>
-</head>
+<!-- About Section -->
+<section id="about" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">關於 DIN</h2>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="assets/img/din_in_campus.jpg" alt="DIN in campus" class="img-fluid rounded">
+      </div>
+      <div class="col-md-6">
+        <p>嗨！我是 DIN，目前就讀於國立中央大學。平時喜歡在黑天鵝湖旁散步、在太極銅雕前冥想，也常去圖書館努力讀書（偶爾摸魚😆）。</p>
+        <p>我熱愛攝影、也喜歡在草地上看書、偶爾跑去打羽球。在中央大學的每一天，都是一場充滿驚喜的小冒險。</p>
+        <p>歡迎你一起來感受中央大學的美好時光！</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-<body>
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">DIN的中央大學</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
+<!-- Campus Section -->
+<section id="campus" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">校園風景</h2>
+    <div id="campusCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- carousel items保留 -->
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#campusCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">關於我</a></li>
-          <li class="nav-item"><a class="nav-link" href="#campus">校園風景</a></li>
-          <li class="nav-item"><a class="nav-link" href="#life">我的生活</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">聯絡我</a></li>
-        </ul>
-      </div>
+      <button class="carousel-control-next" type="button" data-bs-target="#campusCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
     </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <h1>歡迎來到 DIN 的中央大學介紹</h1>
-      <p>跟著 DIN，一起探索 NCU 的每個角落！</p>
-      <a href="#about" class="btn btn-light mt-3">認識 DIN</a>
+    <div class="mt-4 text-center">
+      <p>如果你問我，哪裡是中央最有魔力的地方？我一定推薦中大湖那片靜謐的水面，太極銅雕旁午後的陽光，還有每次經過正門都感覺到的那份自豪。每個角落，都藏著屬於中大人的故事。</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Parallax Section -->
-  <section class="parallax">
-    <div class="container text-center text-white" style="padding-top: 150px;">
-      <h2>中央大學正門</h2>
-      <p>踏入這扇門，將開始你的學術旅程</p>
+<!-- Life Section -->
+<section id="life" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">我的校園生活</h2>
+    <div class="row g-4">
+      <!-- cards 保留 -->
     </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">關於 DIN</h2>
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <img src="assets/img/din_in_campus.jpg" alt="DIN in campus" class="img-fluid rounded">
-        </div>
-        <div class="col-md-6">
-          <p>嗨！我是 DIN，目前就讀於國立中央大學。平時喜歡在中大湖旁散步、在太極銅雕前冥想，也常去圖書館努力讀書（偶爾摸魚😆）。</p>
-          <p>歡迎你一起來感受中央大學的美好時光！</p>
-        </div>
-      </div>
+    <div class="mt-4 text-center">
+      <p>在中央的日子，有忙碌的日常，也有午後的小確幸。有時和朋友在草地上打滾大笑，有時一個人靜靜走在圖書館旁的小徑。這裡，不只是求學的地方，更是成長的見證。</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Campus Section -->
-  <section id="campus" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center mb-4">校園風景</h2>
-      <div id="campusCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="assets/img/ncu_gate.jpg" class="d-block w-100" alt="中央大學正門">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/img/black_swan_lake.jpg" class="d-block w-100" alt="黑天鵝湖">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/img/taichi_sculpture.jpg" class="d-block w-100" alt="太極銅雕">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#campusCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#campusCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Social Media Section -->
-  <footer>
-    <p>跟隨 DIN 的腳步，探索更多精彩校園瞬間！</p>
-    <div>
-      <a href="https://www.instagram.com" target="_blank" class="btn btn-outline-primary btn-sm mx-2">Instagram</a>
-      <a href="https://www.facebook.com" target="_blank" class="btn btn-outline-primary btn-sm mx-2">Facebook</a>
-      <a href="https://line.me" target="_blank" class="btn btn-outline-primary btn-sm mx-2">Line</a>
-    </div>
-  </footer>
-
-  <!-- Back to Top Button -->
-  <button id="backToTop" class="btn btn-primary" onclick="window.scrollTo(0, 0)" style="position: fixed; bottom: 20px; right: 20px; display: none;">
-    回到頂部
-  </button>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    window.onscroll = function() {
-      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        document.getElementById("backToTop").style.display = "block";
-      } else {
-        document.getElementById("backToTop").style.display = "none";
-      }
-    };
-  </script>
-</body>
-
-</html>
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2>聯絡我</h2>
+    <p>地址：桃園市中壢區中大路300號</p>
+    <p>官方網站：<a href="https://www.ncu.edu.tw/" target="_blank">中央大學官網</a></p>
+    <p>想更了解 NCU？<a href="https://goo.gl/maps/m4Gk5P6F68uTqxnJ9" target="_blank">查看地圖</a></p>
+    <p class="mt-3">如果你也想在這片美麗的校園留下足跡，歡迎隨時聯絡我，一起聊聊中大的點滴吧！🌟</p>
+  </div>
+</section>
